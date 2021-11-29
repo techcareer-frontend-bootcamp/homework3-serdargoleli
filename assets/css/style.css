@@ -1,0 +1,62 @@
+/*============================== GOOGLE FONTS ==============================*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+/*=============== Varibles sass ===============*/
+/********** Font weight **********/
+/********** Colors **********/
+/********** Z-index **********/
+/********** Variables CSS **********/
+:root {
+  /********** Fonts **********/
+  --body-font: "Roboto", sans-serif;
+  --biggest-font-size: 3rem;
+  --bigger-font-size: 2rem;
+  --big-font-size: 1.25rem;
+  --normal-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --biggest-font-size: 6rem;
+    --bigger-font-size: 4rem;
+    --big-font-size: 2rem;
+    --normal-font-size: 1rem;
+    --smaller-font-size: 0.938rem;
+  }
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 3rem 0 0 0;
+  font-family: var(--body-font);
+  background-color: #f4f4f6;
+  color: #1d1d1f;
+  overflow: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

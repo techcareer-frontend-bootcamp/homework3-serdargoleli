@@ -1,0 +1,40 @@
+/*=============== Varibles sass ===============*/
+$header-height: 3rem;
+
+/********** Font weight **********/
+$font-light: 300;
+$font-regular: 400;
+$font-bold: 700;
+
+/********** Colors **********/
+$body-color: #f4f4f6;
+$first-color: #1d1d1f;
+$second-color: #0071e3;
+$white-color: #fff;
+$border-color: gray;
+$section-light: #f0f0f0;
+
+/********** Z-index **********/
+$z-fixed: 100; 
+
+/********** Variables CSS **********/
+
+:root {
+  /********** Fonts **********/
+  //$body-font: "Poppins", sans-serif;
+  --body-font: "Roboto", sans-serif;
+
+  --biggest-font-size: 3rem;
+  --bigger-font-size: 2rem;
+  --big-font-size: 1.25rem;
+  --normal-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  @media screen and (min-width: 768px) {
+    --biggest-font-size: 6rem;
+    --bigger-font-size: 4rem;
+    --big-font-size: 2rem;
+    --normal-font-size: 1rem;
+    --smaller-font-size: 0.938rem;
+  }
+}
