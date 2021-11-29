@@ -1,0 +1,165 @@
+/* ========= SECTION ONE  ========= */
+.banner-section {
+  width: 100%;
+  background: $section-light;
+  display: grid;
+  border-radius: $radius;
+  margin-top: 10px;
+  padding: 30px 15px;
+  grid-template:
+    "TEXT"
+    "IMAGE"
+    "SCROLL";
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+  place-items: center;
+  @include mq("tablet") {
+    padding: 95px 110px;
+    grid-template:
+      "TEXT IMAGE"
+      "SCROLL SCROLL";
+    // grid-template-rows: 1.satır, 2.satır...
+    grid-template-rows: 100% auto;
+    // grid-template-columns: 1.kolon, 2.kolon...
+    grid-template-columns: 50% 50%;
+  }
+
+  &-text {
+    grid-area: TEXT;
+    text-align: center;
+    @include mq("tablet") {
+      text-align: left;
+    }
+    h1 {
+      font-weight: $font-regular;
+      font-size: 3rem;
+      @include lineHeight(3rem);
+      @include mq("tablet") {
+        font-size: $biggest-font-size;
+        @include lineHeight($biggest-font-size);
+      }
+    }
+    p {
+      color: $first-color;
+      font-size: $medium-font-size;
+      @include lineHeight($medium-font-size);
+      @include mq("tablet") {
+        font-size: $normal-font-size;
+        @include lineHeight($normal-font-size);
+      }
+    }
+  }
+  &-image {
+    grid-area: IMAGE;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    @include mq("tablet") {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    @include flex();
+    img {
+      position: relative;
+      width: 100px;
+      &.airpod1 {
+        animation: floating1 4s infinite;
+        margin-right: 10px;
+      }
+      &.airpod2 {
+        animation: floating2 4s infinite;
+      }
+    }
+  }
+  &-scroll {
+    grid-area: SCROLL;
+    margin-top: 15px;
+    @include flex($direction: column);
+    span {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+      @include lineHeight(1.1rem);
+      @include mq("tablet") {
+        font-size: $normal-font-size;
+        @include lineHeight($normal-font-size);
+      }
+    }
+    a {
+      &:hover {
+        color: $second-color;
+      }
+    }
+  }
+}
+
+/* ========= SECTION TWO  ========= */
+.features {
+  margin-top: 3rem;
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
+  @include mq("tablet") {
+    padding: 3.2rem;
+  }
+  @include flex();
+  &-text {
+    text-align: center;
+    color: $first-color;
+    &-box {
+      max-width: 150px;
+      margin-bottom: 30px;
+      & > small {
+        font-size: $medium-font-size;
+      }
+      h2 {
+        font-size: $biggest-font-size;
+        small {
+          font-size: $bigger-font-size;
+        }
+      }
+    }
+  }
+  &-image {
+    margin-left: 20px;
+    width: 250px;
+    position: relative;
+    .floating3 {
+      animation: heartbeat 1s infinite;
+    }
+  }
+}
+/* ========= FOOTER  ========= */
+
+/* ========= ANIMATION  ========= */
+@keyframes floating1 {
+  0% {
+    top: -20px;
+  }
+  50% {
+    top: 20px;
+  }
+  100% {
+    top: -20px;
+  }
+}
+@keyframes floating2 {
+  0% {
+    bottom: -20px;
+  }
+  50% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: -20px;
+  }
+}
+@keyframes heartbeat {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.8);
+  }
+}

@@ -15,26 +15,24 @@ $border-color: gray;
 $section-light: #f0f0f0;
 
 /********** Z-index **********/
-$z-fixed: 100; 
+$z-index-above: 100;
+$z-index-between: 50;
+$z-index-under: -1;
 
-/********** Variables CSS **********/
+/********** Font **********/
+$body-font: "Roboto", sans-serif;
 
-:root {
-  /********** Fonts **********/
-  //$body-font: "Poppins", sans-serif;
-  --body-font: "Roboto", sans-serif;
+/********** Font Size **********/
+$biggest-font-size: 3rem;
+$bigger-font-size: 2rem;
+$big-font-size: 1.25rem;
+$medium-font-size: 1rem;
+$normal-font-size: 0.813rem;
+$smaller-font-size: 0.75rem;
 
-  --biggest-font-size: 3rem;
-  --bigger-font-size: 2rem;
-  --big-font-size: 1.25rem;
-  --normal-font-size: 0.813rem;
-  --smaller-font-size: 0.75rem;
+/********** Border **********/
+$radius: 20px;
+$radius-2: 10px;
 
-  @media screen and (min-width: 768px) {
-    --biggest-font-size: 6rem;
-    --bigger-font-size: 4rem;
-    --big-font-size: 2rem;
-    --normal-font-size: 1rem;
-    --smaller-font-size: 0.938rem;
-  }
-}
+/********** Transition **********/
+$transition: all 0.3s;

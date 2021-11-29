@@ -5,8 +5,36 @@
 @import "variables/variable";
 @import "base/base";
 @import "layout/layout";
+@import "mixin/mixin";
 @import "components/navbar";
 @import "components/home";
 @import "components/details";
 @import "components/footer";
 @import "components/mediaqueries";
+
+.container {
+  width: 93%;
+  margin-right: auto;
+  margin-left: auto;
+  @include mq("desktop") {
+    width: 990px;
+  }
+}
+
+.btn {
+  padding: 6px 12px;
+  border-radius: $radius;
+  transition: $transition;
+}
+
+.btn-primary {
+  color: $white-color;
+  background: $first-color;
+  &:hover {
+    background: $second-color;
+  }
+}
+
+.w-100 {
+  width: 100%;
+}

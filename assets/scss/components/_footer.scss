@@ -1,0 +1,29 @@
+footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  @include boxShadow($y: -4px);
+  @include flex($jc: flex-start);
+  .container {
+    @include flex($jc: space-between, $direction: column);
+    color: $first-color;
+    @include mq("tablet") {
+      @include flex($jc: space-between);
+    }
+    p {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .social-media {
+      a {
+        font-size: $medium-font-size;
+        margin-right: 10px;
+        &:hover {
+          color: $second-color;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

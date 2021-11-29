@@ -1,33 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Landing Page - Apple ipods</title>
-    <link rel="stylesheet" href="assets/css/style.css"> 
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+  </head>
+  <body>
     <!-- HEADER -->
-    <header>
-        <nav class="nav"> 
-
-        </nav> 
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <div class="nav-left">
+            <a href="">AirPods</a>
+          </div>
+          <div class="nav-right">
+            <div class="nav-right-menu" id="menu">
+              <a href="#description" class="nav-link active">Description</a>
+              <a href="#features" class="nav-link">Features</a>
+            </div>
+            <a href="javascript:;" class="btn btn-menu" id="btn-menu"><i class="bx bx-menu bx-sm"></i></a>
+            <a href="javascript:;" class="btn btn-primary">Compare</a>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <!-- MAIN CONTENT -->
-    <main> 
-        
+    <main class="container">
+      <!-- SUB MENU -->
+      <section class="sub-menu">
+        <div class="sub-menu-item">
+          <img src="./assets/img/icon1.svg" alt="AirPods 2" draggable="false" />
+          <p>AirPods <br />2</p>
+        </div>
+        <div class="sub-menu-item">
+          <img src="./assets/img/icon3.svg" alt="AirPods Pro" draggable="false" />
+          <p>AirPods <br />Pro</p>
+        </div>
+        <div class="sub-menu-item">
+          <img src="./assets/img/icon4.svg" alt="AirPods Max" draggable="false" />
+          <p>AirPods <br />Max</p>
+        </div>
+        <div class="sub-menu-item">
+          <img src="./assets/img/icon6.svg" alt="Apple Music" draggable="false" />
+          <p>Apple Music</p>
+        </div>
+      </section>
+
+      <!-- SECTION ONE -->
+      <section id="description" class="w-100">
+        <article class="banner-section">
+          <div class="banner-section-text">
+            <h1 class="title">AirPods</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cumque quos officia! Quos dolor cupiditate, ad molestias placeat
+              recusandae enim perferendis hic sit. Illum maiores velit quo amet et labore.
+            </p>
+          </div>
+          <div class="banner-section-image">
+            <img src="./assets/img/airpod1.png" class="airpod1" alt="AirPods Pro" draggable="false" />
+            <img src="./assets/img/airpod2.png" class="airpod2" alt="AirPods Pro" draggable="false" />
+          </div>
+          <div class="banner-section-scroll">
+            <span>Show down for more</span>
+            <a href="#features">
+              <i class="bx bx-mouse bx-md"></i>
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <!-- SECTION TWO -->
+      <section class="features" id="features">
+        <div class="features-text">
+          <div class="features-text-box">
+            <small>More than</small>
+            <h2>24 <small>h</small></h2>
+            <p>of battery life with charging case</p>
+          </div>
+          <div class="features-text-box">
+            <small>Up to</small>
+            <h2>5 <small>h</small></h2>
+            <p>of battery life on a single charge</p>
+          </div>
+          <div class="features-text-box">
+            <small>Just</small>
+            <h2>15 <small>min</small></h2>
+            <p>of charge equals up to 3 hours of audio</p>
+          </div>
+        </div>
+        <div class="features-image">
+          <img src="./assets/img/airpods.png" class="floating3" alt="AirPods" draggable="false" />
+        </div>
+      </section>
     </main>
 
     <!-- FOOTER -->
-    <footer id="footer"> 
-
+    <footer id="footer" class="footer">
+      <div class="container">
+        <p>&copy; Lorem ipsum dolor sit amet.</p>
+        <div class="social-media">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <i class="bx bxl-youtube"></i>
+          </a>
+          <a href="#" class="mx" target="_blank" rel="noopener noreferrer">
+            <i class="bx bxl-instagram"></i>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <i class="bx bxl-twitter"></i>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <i class="bx bxl-linkedin"></i>
+          </a>
+        </div>
+      </div>
     </footer>
 
     <!-- MAIN JS -->
-    <script src="assets/js/main.js"></script>
-</body>
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>
